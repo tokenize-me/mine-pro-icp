@@ -10,27 +10,27 @@ interface HowToBuyItem {
 const howToBuyItems: HowToBuyItem[] = [
   {
     step: 1,
-    title: "Connect With Your Wallet & Select Network",
+    title: "Visit the ICP NNS app",
     description:
-      "Connect your decentralized wallet (MetaMask, Trust Wallet, or others) to the MinePro website at the top right of the page. Then, select your wallet in the on-site presale widget, MinePro's presale accepts ERC20, BEP20, BASE, ARBITRUM, and SOL.",
+      "Visit: https://nns.ic0.app/. You'll need ICP loaded in your wallet to participate. We suggest using the Bitfinity wallet. You can purchase ICP on any major exchange, just be sure to send to your wallet on the ICP network.",
   },
   {
     step: 2,
-    title: "Add Crypto to Your Wallet",
+    title: "Sign in with Internet Identity",
     description:
-      "Make sure your have ETH, BNB, USDT, or USDC in your wallet ready to swap for $MINE, if you don't, you can purchase some on a third-party exchange or use the card option!",
+      "You'll need to have or create an Internet Identity to participate in the SNS Dao Sale. This is a secure way to manage your digital identity on the Internet Computer.",
   },
   {
     step: 3,
-    title: "Buy $MINE",
+    title: "Find Our SNS Dao Sale",
     description:
-      "Enter the amount of ETH, BNB, USDT, or USDC to swap for $MINE, then confirm the transaction through your wallet.",
+      "Click on Launchpad and find our launch under 'Current Launches'",
   },
   {
     step: 4,
-    title: "Claim Your $MINE and Earn!",
+    title: "Participate",
     description:
-      "Once our presale ends, you can then claim your $MINE tokens in the same wallet and network you used to purchase. $MINE will be immediately tradable on multiple large exchanges as well as stake-able for huge monthly Bitcoin profits from our facility.",
+      "Click on Participate and choose how much ICP to contribute.",
   },
 ];
 

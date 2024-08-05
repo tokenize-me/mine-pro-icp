@@ -240,9 +240,9 @@ export default function Home() {
               operations in the WORLD!
             </p>
           </MotionDiv>
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <ScrollToTop />
-          </div>
+          </div> */}
         </div>
 
         {/* right col - image */}
@@ -441,11 +441,11 @@ export default function Home() {
           />
           <FAQCard
             title="Where can I buy $MINE"
-            description="You're early! If you're reading this, you're able to try to gain early exposure to $MINE in our upcoming limited Presale, make sure to stay updated with us on Twitter and Discord for more information."
+            description="You're early! If you're reading this, you're able to try to gain early exposure to $MINE in our upcoming limited SNS Dao Sale, make sure to stay updated with us on Twitter and Discord for more information."
           />
           <FAQCard
             title="What is the profit potential?"
-            description="MinePro Presale participants gain a guaranteed 2x profit on token launch. Once we have purchased, shipped, and started running the ASICs, stakers will gain a 10-20% expected non-compounded profit in pure BTC rewards. Compounded, that's around a 15,000% return in 3 years! Passively!"
+            description="MinePro SNS Dao Sale participants gain a guaranteed 2x profit on token launch. Once we have purchased, shipped, and started running the ASICs, stakers will gain a 10-20% expected non-compounded profit in pure BTC rewards. Compounded, that's around a 15,000% return in 3 years! Passively!"
           />
           <FAQCard
             title="Is this for real?"
@@ -462,9 +462,17 @@ export default function Home() {
             Join Our Community
           </h2>
           <div className="grid grid-cols-2 lg:grid-cols-3 justify-center gap-4 sm:gap-8 lg:gap-16">
-            <div className="h-full">
+            {/* <div className="h-full">
               <ScrollToTop fullHeight />
-            </div>
+            </div> */}
+            <a
+              href="https://nns.ic0.app/"
+              rel="noreferrer"
+              target="_blank"
+              className="orangeButton"
+            >
+              <p>Join SNS Dao Sale</p>
+            </a>
             <a
               href="https://discord.com/invite/dWtWJjwNYy"
               rel="noreferrer"

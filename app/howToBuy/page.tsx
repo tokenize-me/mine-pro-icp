@@ -32,23 +32,21 @@ const Page = () => {
                 <p className={` text-2xl font-bold tracking-wider`}>01</p>
               </div>
               <h2 className="text-left  pl-6 grayTextGradient  text-[23px] lg:text-[30px]">
-                Connect Wallet.
+                Visit the ICP NNS app:
               </h2>
             </div>
           </div>
           <p className="mt-6 grayTextGradient  w-full tracking-wide   text-sm md:text-base  2xl:text-xl px-5">
-            To purchase $MINE tokens, first you need to connect with a wallet
-            supported by our Presale widget on our main website page at
+          Visit the ICP NNS app here:
             <a
               target="true"
-              href="http://www.mineprobusiness.net"
+              href="https://nns.ic0.app/"
               className="px-1.5 orangeTextGradient"
             >
-              www.mineprobusiness.net,
+              nns.ic0.app,
             </a>
-            We currently support the following wallets: MetaMask, Trust Wallet.
-            Click the "Connect Wallet" button, confirm any requests in your
-            wallet, then move to the next step.
+            You'll need ICP loaded in your wallet to participate. We suggest using the Bitfinity wallet. 
+            You can purchase ICP on any major exchange, just be sure to send to your wallet on the ICP network.
           </p>
           <div className="w-full mt-12 md:mt-16">
             <Image
@@ -82,13 +80,12 @@ const Page = () => {
                 <p className={` text-2xl font-bold tracking-wider`}>02</p>
               </div>
               <h2 className="text-left  pl-6 grayTextGradient  text-[23px] lg:text-[30px]">
-                Select Desired Network.
+                Sign in with Internet Identity or create one
               </h2>
             </div>
           </div>
           <p className="mt-6 grayTextGradient  w-full tracking-wide   text-sm md:text-base  2xl:text-xl px-5">
-            Select your desired network by clicking on it's logo in our Presale
-            widget and confirming in your wallet.
+            Create an Internet Identity or sign in with an existing one.
           </p>
           <div className="w-full mt-12 md:mt-16">
             <Image

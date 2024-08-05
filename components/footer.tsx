@@ -58,14 +58,6 @@ const Footer: React.FC = () => {
           >
             Docs
           </a>
-          {/* <a
-            href="https://presale.mineprobusiness.net/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-[14px] font-semibold leading-6 text-white/60 hover:text-white transition-all duration-200"
-          >
-            Join Live Presale
-          </a> */}
         </div>
         {/* company links */}
         <div className="flex flex-col gap-4">
