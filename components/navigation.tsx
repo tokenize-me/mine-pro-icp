@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ConnectWallet } from "./connect-wallet";
+// import { ConnectWallet } from "./connect-wallet";
 import config from "@/config";
 import Link from "next/link";
 
@@ -10,10 +10,6 @@ const navlink = [
   {
     title: "About",
     link: "about",
-  },
-  {
-    title: "presale",
-    link: "presale",
   },
   {
     title: "How To Buy",
@@ -87,13 +83,6 @@ const Navigation = () => {
             About
           </a>
           <a
-            href="#presale"
-            className="text-white/40 hover:text-white"
-            onClick={() => setNavbar(!navbar)}
-          >
-            Presale
-          </a>
-          <a
             href="#how-to-buy"
             className="text-white/40 hover:text-white"
             onClick={() => setNavbar(!navbar)}
@@ -141,7 +130,7 @@ const Navigation = () => {
           >
             Telegram
           </a>
-          <ConnectWallet />
+          {/* <ConnectWallet /> */}
         </div>
       </div>
 
@@ -184,7 +173,7 @@ const Navigation = () => {
 
       {/* wallet connect */}
       <div className="hidden lg:block justify-self-end w-fit float-end">
-        <ConnectWallet />
+        {/* <ConnectWallet /> */}
       </div>
     </nav>
   );

@@ -1,21 +1,14 @@
 import Image from "next/image";
-// import config from "@/config";
-import PresaleCard from "@/components/presale-card";
 import MineProTag from "@/components/minepro-tag";
 import BenefitsCard from "@/components/benefits-card";
-import { Button } from "@/components/ui/button";
 import FAQCard from "@/components/faq-card";
 import {
-  slideFromLeftVariants,
-  slideFromRightVariants,
-  slideUpVariants,
   fadeInVariants,
 } from "../types";
 import { MotionDiv } from "@/components/motion-div";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { RewardSystemCard } from "@/components/reward-system-card";
 import { HowToBuyItems } from "@/components/how-to-buy-items";
-import ScrollingPartners from "@/components/scrolling-partners";
 import Roadmap from "@/components/roadmap";
 import VideoPlayer from "@/components/VideoPlayer";
 import Partners from "@/components/Partners";
@@ -52,7 +45,7 @@ export default function Home() {
             </div>
 
             <div className="absolute inset-0">
-              <div className="mr-4 lg:ml-4 xl:ml-8 lg:mr-0 mb-8 flex flex-col sm:items-center sm:w-full lg:w-auto lg:items-start">
+              <div className="mr-4 lg:ml-4 xl:ml-8 lg:mr-0 mb-8 mt-12 flex flex-col sm:items-center sm:w-full lg:w-auto lg:items-start">
                 <MineProTag />
                 <div className="mt-4 ">
                   <h1
@@ -73,14 +66,14 @@ export default function Home() {
           {/* righthand content - presale card */}
           <div className="lg:mr-4 flex justify-center relative">
             {/* <div className="publicSaleSectionBG sm:top-[120px]"></div> */}
-            <div className=" lg:mt-12">
+            {/* <div className=" lg:mt-12">
               <PresaleCard />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
       {/* benefits of mining section */}
-      <section id="about" className="max-w-[1440px] mx-auto mt-8 lg:mt-20">
+      <section id="about" className="max-w-[1440px] mx-auto mt-12 lg:mt-36">
         <div className="flex justify-center">
           <MineProTag />
         </div>
@@ -322,7 +315,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="mt-6 max-w-[560px] text-white/60 text-[16px]">
-              All Presale contributors and airdrop recipients will have the
+              All Contributors and airdrop recipients will have the
               opportunity to stake their tokens before TGE. If they choose to
               stake prior to liquidity creation there will be HUGE bonus
               multipliers on earnings! Remember that as stakers you'll always

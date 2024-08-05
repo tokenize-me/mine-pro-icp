@@ -43,10 +43,18 @@ function Grid() {
   const mouseY = useMotionValue(0);
   // mouse position from center
   const centerMouseX = useTransform<number, number>(mouseX, (newX) => {
-    return newX - window.innerWidth / 1.9;
+    if (typeof window !== "undefined") {
+      return newX - window.innerWidth / 1.9;
+    } else {
+      return newX;
+    }
   });
   const centerMouseY = useTransform<number, number>(mouseY, (newY) => {
-    return newY - window.innerHeight / 1.7;
+    if (typeof window !== "undefined") {
+      return newY - window.innerHeight / 1.7;
+    } else {
+      return newY;
+    }
   });
   // eased mouse position
   const mouseXEased = useMotionValue(0);
