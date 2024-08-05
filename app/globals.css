@@ -1,0 +1,1091 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* if using ShadCN theme, paste the code here */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.3rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9;
+  }
+}
+
+/* GENERAL STYLES */
+html {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  position: relative;
+  background: black;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.4) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* COMPONENT STYLES */
+.mineproTag {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 8px;
+
+  background: rgba(254, 123, 30, 0.04);
+  box-shadow: inset 0px 4px 8px rgba(254, 123, 30, 0.32),
+    inset 0px -4px 8px rgba(254, 123, 30, 0.32);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+.glassyInput {
+  border: 1px solid rgba(242, 222, 247, 0.12);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  size: 14px;
+}
+.glassyInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.glassyInputNoPadding {
+  border: 1px solid rgba(242, 222, 247, 0.12);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  size: 14px;
+}
+.glassyInputNoPadding::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* REUSABLE STYLES */
+.heroHeaderText {
+  font-weight: 800;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 5px 6px 0px #2e84bd;
+}
+
+.orangeTextGradient {
+  /* font-family: "Helvetica Neue"; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+
+  background: linear-gradient(178.92deg, #fe8936 0.92%, #fddec7 122.79%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.grayTextGradient {
+  /* font-family: "Helvetica Neue"; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* or 86px */
+  text-transform: capitalize;
+
+  background: linear-gradient(
+    178.92deg,
+    #f7e9de 44.88%,
+    rgba(255, 255, 255, 0.2) 122.79%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.orangTextGradient {
+  /* font-family: "Helvetica Neue"; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* or 86px */
+  text-transform: capitalize;
+
+  background: linear-gradient(
+    178.92deg,
+    #d26d1f77 44.88%,
+    rgb(216, 89, 10) 122.79%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.image-shadow {
+  box-shadow: 0px 0px 20px 10px #fd873265;
+}
+.creamTextGradient {
+  /* font-family: "Helvetica Neue"; */
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  /* or 86px */
+  text-align: center;
+  text-transform: capitalize;
+
+  background: linear-gradient(
+    178.92deg,
+    #f7e9de 44.88%,
+    rgba(255, 255, 255, 0.2) 122.79%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.glassCard {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(48px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 40px;
+}
+.glassCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(214, 214, 214, 0.9) 0%,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.benefitCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 16px;
+
+  padding: 72px 32px 32px 32px;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.benefitCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.benefitCardGradient1 {
+  position: absolute;
+  width: 14px;
+  height: 288px;
+  left: 212.71px;
+  top: -200px;
+
+  background: #fe7b1e;
+  filter: blur(80px);
+  transform: rotate(25deg);
+}
+.benefitCardGradient2 {
+  position: absolute;
+  width: 14px;
+  height: 288px;
+  left: 480px;
+  top: -220px;
+
+  background: #fe7b1e;
+  filter: blur(60px);
+  transform: rotate(25deg);
+}
+
+.glassContainerContainerRound {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-image: url("/glass-container-image-round.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefitOrangeCircle {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  isolation: isolate;
+
+  width: 64px;
+  height: 64px;
+
+  background: #fe7b1e;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.32),
+    inset 0px -2px 8px rgba(255, 255, 255, 0.32);
+  border-radius: 112px;
+}
+
+.videoSectionBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-image: url("/backgrounds/video-section-background.png");
+  width: 100%;
+  height: 100%;
+}
+
+.videoFrame {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.rewardSystemCard {
+  isolation: isolate;
+
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(48px);
+
+  background-image: url("/backgrounds/grid-lines-background.png");
+  background-size: cover;
+  background-position: center;
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 40px;
+}
+
+.rewardSystemCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(247, 12, 12, 0) 25%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.rewardItemCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 24px;
+  box-shadow: 0px -80px 100px 26px #000000;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(30px);
+  border-radius: 16px;
+}
+
+.rewardItemActiveGradient1 {
+  position: absolute;
+  width: 14px;
+  height: 288px;
+  left: 20.71px;
+  top: -100px;
+
+  background: #fe7b1e;
+  filter: blur(90px);
+  transform: rotate(35deg);
+
+  z-index: -1;
+}
+.rewardItemActiveGradient2 {
+  /* orange gradient */
+  position: absolute;
+  width: 364px;
+  height: 64px;
+  left: 20px;
+  bottom: -80px;
+
+  background: #a44a0b;
+  filter: blur(60px);
+
+  z-index: -1;
+}
+
+.rewardItemCard.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.progressPointer {
+  box-shadow: 0px 0px 10px 6px #fd8632;
+}
+.rewardItemCard.inactive {
+  opacity: 0.4;
+}
+
+.howToBuyItemCard {
+  padding: 24px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(30px);
+  border-radius: 16px;
+}
+.howToBuyItemCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.glassContainerContainerRoundHowToBuy {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-image: url("/glass-container-image-round.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.howToBuyOrangeCircle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+
+  width: 56px;
+  height: 56px;
+
+  background: #fe7b1e;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.32),
+    inset 0px -2px 8px rgba(255, 255, 255, 0.32);
+  border-radius: 112px;
+}
+
+.howToBuyItemGradient {
+  position: absolute;
+  width: 364px;
+  height: 64px;
+  left: 20px;
+  bottom: -80px;
+
+  background: #a44a0b;
+  filter: blur(100px);
+
+  z-index: -1;
+}
+.howToBuyDivGradient {
+  position: absolute;
+  width: 374px;
+  height: 94px;
+  left: 20px;
+  top: 70px;
+
+  background: #d06010;
+  filter: blur(100px);
+
+  z-index: -1;
+}
+.stepsGradient {
+  position: absolute;
+  width: 374px;
+  height: 94px;
+  right: -120px;
+  top: 70px;
+
+  background: #d06010d0;
+  filter: blur(100px);
+
+  z-index: -1;
+}
+
+.dottedGridPartnerContainer {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  /* left: 0; */
+  /* top: 0; */
+
+  z-index: -1;
+
+  background-image: url("/backgrounds/dot-grid-1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.partnerItemCard {
+  position: relative;
+  overflow: hidden;
+
+  width: 406px;
+  height: 104px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 16px;
+}
+
+.partnerItemGradient {
+  /* Ellipse 1495 */
+
+  position: absolute;
+  width: 207px;
+  height: 64px;
+  left: calc(50% - 207px / 2 + 0.5px);
+  top: 120px;
+
+  background: #a44a0b;
+  filter: blur(50px);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.partnerItemCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.roadmapDots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  z-index: -1;
+
+  background-image: url("/backgrounds/roadmap-dots.png");
+  background-size: cover;
+  background-position: center;
+}
+.roadmapDotsMobile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100px;
+  top: 0;
+
+  z-index: -1;
+
+  background-image: url("/backgrounds/roadmap-dots.png");
+}
+
+/* .roadmapDot1Empty {
+  box-sizing: border-box;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: calc(50% - 44px / 2 + 0px);
+  top: 80px;
+
+  background: rgba(255, 255, 255, 0.002);
+  box-shadow: 0px 0px 80px #0184e6;
+  border-radius: 22.09px;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+.roadmapDot1Filled {
+  box-sizing: border-box;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: calc(50% - 44px / 2 + 0px);
+  top: 80px;
+
+  background: linear-gradient(180deg, #63b2e8 0%, #0184e6 100%);
+
+  box-shadow: 0px 0px 80px #0184e6;
+  border-radius: 22.09px;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+} */
+
+.roadmapItemCard {
+  position: relative;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(242, 222, 247, 0.2);
+  backdrop-filter: blur(30px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 16px;
+
+  padding: 32px;
+}
+
+.roadmapItemCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.roadmapItemCardGradient1 {
+  position: absolute;
+  width: 295.36px;
+  height: 194.83px;
+  left: 386px;
+  top: 178.45px;
+
+  background: #a44a0b;
+  filter: blur(144.071px);
+  transform: rotate(-15deg);
+}
+.roadmapItemCardGradient2 {
+  position: absolute;
+  width: 14px;
+  height: 288px;
+  left: 212.71px;
+  top: -183px;
+
+  background: #fe7b1e;
+  filter: blur(90px);
+  transform: rotate(25deg);
+}
+
+.FAQSectionGradient1 {
+  position: absolute;
+  width: 57.99px;
+  height: 1192.89px;
+  left: -125.45px;
+  top: -307px;
+
+  background: #a44a0b;
+  filter: blur(90px);
+  transform: matrix(-0.91, 0.42, 0.42, 0.91, 0, 0);
+  z-index: -1;
+}
+
+.FAQSectionGradient2 {
+  position: absolute;
+  width: 57.99px;
+  height: 1192.89px;
+  right: -27.12px;
+  top: -189px;
+
+  background: #a44a0b;
+  filter: blur(100px);
+  transform: rotate(25deg);
+}
+
+.FAQCard {
+  position: relative;
+}
+
+.FAQCard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5px; /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(214, 214, 214, 0.9) 0%,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.FAQCardGradient1 {
+  position: absolute;
+  width: 140px;
+  height: 128px;
+  left: 12px;
+  top: -10px;
+
+  background: #fe7b1e;
+  filter: blur(150px);
+  transform: rotate(0deg);
+}
+
+.FAQCardGradient2 {
+  position: absolute;
+  width: 140px;
+  height: 288px;
+  right: -1px;
+  top: -96px;
+
+  background: #fe7b1e;
+  filter: blur(190px);
+  transform: rotate(deg);
+}
+
+.FAQOrangeCircle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  isolation: isolate;
+
+  width: 56px;
+  height: 56px;
+
+  background: #f9812b;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.32),
+    inset 0px -2px 8px rgba(255, 255, 255, 0.32);
+  border-radius: 112px;
+}
+
+.glassButtonContainer {
+  /* display: flex;
+  justify-content: center;
+  padding: 4px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px; */
+
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-image: url("/glass-container-image.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.glassButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0px 5px 7px rgba(255, 255, 255, 0.32),
+    inset 0px -4px 8px rgba(255, 255, 255, 0.32);
+  border-radius: 8px;
+}
+.glassButtonRelative {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.32),
+    inset 0px -4px 8px rgba(255, 255, 255, 0.32);
+  border-radius: 8px;
+}
+.glassButtonSmall {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.32),
+    inset 0px -4px 8px rgba(255, 255, 255, 0.32);
+  border-radius: 8px;
+}
+
+.orangeButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 40px;
+  gap: 8px;
+  isolation: isolate;
+
+  background: #fe7b1e;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0px 4px 8px rgba(255, 255, 255, 0.32),
+    inset 0px -4px 8px rgba(255, 255, 255, 0.32);
+  border-radius: 20px;
+}
+
+.orangeButton:hover {
+  opacity: 80%;
+  transition: all 0.3s;
+}
+
+/* orangeButton mobile */
+@media screen and (max-width: 768px) {
+  .orangeButton {
+    padding: 24px 16px;
+  }
+}
+.hamburgerBtn {
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* section backgroudns */
+.heroSectionBG {
+  position: absolute;
+  /* width: 850px; */
+  width: 100%;
+  /* height: 912px; */
+  height: 1212px;
+  left: calc(50% - 100% / 2);
+  /* top: -169px; */
+  top: 0px;
+  z-index: -2;
+  box-shadow: 20px 0px 60px 30px #2413063c;
+
+  background-image: url("/backgrounds/hero-section-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroSectionBG2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+
+  background-image: url("/backgrounds/grid-lines-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroSectionBG4 {
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
+
+  width: 400px;
+  height: 400px;
+  z-index: -3;
+
+  background-image: url("/backgrounds/grid-lines-background.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.publicSaleSectionBG {
+  position: absolute;
+  width: 900px;
+  height: 1200px;
+  /* height: 1100px; */
+  /* width: 850px;
+  height: 812px; */
+  /* left: -150px; */
+  /* top: 120px; */
+  z-index: -10;
+  background-size: cover;
+  background-position: center;
+
+  /* old version that is large but not animated */
+  /* position: absolute;
+  width: 900px;
+  height: 1200px;
+  z-index: -1;
+  background-image: url("/backgrounds/hero-section-background-2.png");
+  background-size: cover;
+  background-position: center; */
+}
+
+.publicSaleSectionBG2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -11;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.joinOurCommunityBG {
+  background-image: url("/backgrounds/join-our-community-background.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.joinOurCommunityBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  /* Adjust the height as needed */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.4) 25%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Base font sizes */
+body {
+  font-size: 16px; /* Base font size for the body */
+}
+h1 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 1.2; /* Adjust line height as needed */
+}
+h2 {
+  font-size: 2rem; /* 32px */
+  line-height: 1.3;
+}
+h3 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 1.4;
+}
+p {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+}
+/* CSS classes for font sizing */
+.smallText {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
+}
+.largeText {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.4;
+}
+
+/* Breakpoint for 1024px */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px; /* Adjust base font size for smaller screens */
+  }
+  h1 {
+    font-size: 2.25rem; /* 36px */
+  }
+  h2 {
+    font-size: 1.875rem; /* 30px */
+  }
+  h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+  p {
+    font-size: 0.9375rem; /* 15px */
+  }
+  .smallText {
+    font-size: 0.8125rem; /* 13px */
+  }
+  .largeText {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+/* Breakpoint for 768px */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px; /* Adjust base font size for smaller screens */
+  }
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+  h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+  h3 {
+    font-size: 1.375rem; /* 22px */
+  }
+  p {
+    font-size: 0.875rem; /* 14px */
+  }
+  .smallText {
+    font-size: 0.75rem; /* 12px */
+  }
+  .largeText {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* animation  */
+
+.circle-animation {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  align-items: center;
+}
+
+.semicircle-container {
+  position: relative;
+  width: 240px;
+  height: 120px;
+}
+
+.circle {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #a9561c;
+  box-shadow: 0 0 10px 1px #703d19;
+  background-color: black;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-out;
+}
+
+.circle.lit {
+  background-color: #ff9043;
+}
+
+.circle.resetting {
+  transition: none;
+  background-color: black;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
