@@ -429,15 +429,15 @@ export default function Home() {
         <div className="mt-12 sm:mt-[72px] mb-[106px] flex flex-col items-center gap-8 w-full">
           <FAQCard
             title="What Is MinePro?"
-            description="MinePro is a next level, tokenized, Bitcoin mining ecosystem which grants token holders access to passive profits from one of the lowest power cost Bitcoin mining operations in existence, a mining-revenue powered play-to-earn game, and more through our deflationary native token, $MINE."
+            description="MinePro is a next level, tokenized, Bitcoin mining ecosystem which grants token holders access to passive profits from one of the lowest power cost Bitcoin mining operations in existence."
           />
           <FAQCard
             title="Where Can I Buy $MINE?"
-            description="You're early! If you're reading this, you're able to try to gain early exposure to $MINE in our upcoming limited SNS Dao Sale, make sure to stay updated with us on Twitter and Discord for more information."
+            description="You're early! If you're reading this, you're able to try to gain early exposure to $MINE in our upcoming limited SNS Decentralized Sale, make sure to stay updated with us on Twitter and Discord for more information."
           />
           <FAQCard
             title="What Is The Profit Potential?"
-            description="MinePro SNS Dao Sale participants gain a guaranteed 2x profit on token launch. Once we have purchased, shipped, and started running the ASICs, stakers will gain a 10-20% expected non-compounded profit in pure BTC rewards. Compounded, that's around a 15,000% return in 3 years! Passively!"
+            description="MinePro SNS Dao Sale participants gain a guaranteed 2x profit on token launch. Once we have purchased, shipped, and started running the ASICs, stakers will gain a 5-15% expected non-compounded profit in pure BTC rewards."
           />
           <FAQCard
             title="Transparency"
@@ -463,7 +463,7 @@ export default function Home() {
               target="_blank"
               className="orangeButton"
             >
-              <p>Join SNS Dao Sale</p>
+              <p>Join Decentralized Sale</p>
             </a>
             <a
               href="https://discord.com/invite/dWtWJjwNYy"

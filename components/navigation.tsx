@@ -104,7 +104,7 @@ const Navigation = () => {
             FAQ
           </a>
           <a
-            href="https://minepro-1.gitbook.io/minepro-documentation"
+            href="https://minepro-1.gitbook.io/minepro-new-docs"
             target="_blank"
             rel="noreferrer"
             className="text-white/40 hover:text-white"
