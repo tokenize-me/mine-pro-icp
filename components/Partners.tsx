@@ -70,7 +70,7 @@ const pngPartners: pngPartner[] = [
   // },
   {
     name: "Bitfinity",
-    logo: "/partners/bitfinityPartner.jpeg",
+    logo: "/partners/bitfinityPartnerReal.jpeg",
   },
   {
     name: "ICP",
