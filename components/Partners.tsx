@@ -10,69 +10,77 @@ interface pngPartner {
   logo: string;
 }
 const partners: Partner[] = [
-  { name: "dappd", logo: "/partners/dappd.png" },
-  { name: "Bitmain", logo: "/partners/bitmain.svg" },
+  // { name: "dappd", logo: "/partners/dappd.png" },
+  // { name: "Bitmain", logo: "/partners/bitmain.svg" },
   { name: "Logic Mining", logo: "/partners/logic-mining.png" },
-  { name: "Circle", logo: "/partners/circle.svg" },
-  { name: "Webinopoly", logo: "/partners/webinopoly.png" },
-  { name: "Full Base", logo: "/partners/full-base.svg" },
-  { name: "web", logo: "/partners/new/webinopoly.webp" },
+  // { name: "Circle", logo: "/partners/circle.svg" },
+  // { name: "Webinopoly", logo: "/partners/webinopoly.png" },
+  // { name: "Full Base", logo: "/partners/full-base.svg" },
+  // { name: "web", logo: "/partners/new/webinopoly.webp" },
 ];
 
 const pngPartners: pngPartner[] = [
+  // {
+  //   name: "arb",
+  //   logo: "/partners/arb.png",
+  // },
+  // {
+  //   name: "sol",
+  //   logo: "/partners/sol.png",
+  // },
+  // {
+  //   name: "bybit",
+  //   logo: "/partners/bybit.png",
+  // },
+  // {
+  //   name: "cioncap",
+  //   logo: "/partners/cioncap.png",
+  // },
+  // {
+  //   name: "eth",
+  //   logo: "/partners/eth.png",
+  // },
+  // {
+  //   name: "google",
+  //   logo: "/partners/google.png",
+  // },
+  // {
+  //   name: "nvidia",
+  //   logo: "/partners/nvidia.png",
+  // },
+  // {
+  //   name: "telegram",
+  //   logo: "/partners/telegram.png",
+  // },
+  // {
+  //   name: "tether",
+  //   logo: "/partners/tether.png",
+  // },
+  // {
+  //   name: "trust",
+  //   logo: "/partners/trust.png",
+  // },
+  // {
+  //   name: "visa",
+  //   logo: "/partners/visa.png",
+  // },
+  // {
+  //   name: "mertamask",
+  //   logo: "/partners/new/metamask.png",
+  // },
   {
-    name: "arb",
-    logo: "/partners/arb.png",
+    name: "Bitfinity",
+    logo: "/partners/bitfinityPartner.jpeg",
   },
   {
-    name: "sol",
-    logo: "/partners/sol.png",
-  },
-  {
-    name: "bybit",
-    logo: "/partners/bybit.png",
-  },
-  {
-    name: "cioncap",
-    logo: "/partners/cioncap.png",
-  },
-  {
-    name: "eth",
-    logo: "/partners/eth.png",
-  },
-  {
-    name: "google",
-    logo: "/partners/google.png",
-  },
-  {
-    name: "nvidia",
-    logo: "/partners/nvidia.png",
-  },
-  {
-    name: "telegram",
-    logo: "/partners/telegram.png",
-  },
-  {
-    name: "tether",
-    logo: "/partners/tether.png",
-  },
-  {
-    name: "trust",
-    logo: "/partners/trust.png",
-  },
-  {
-    name: "visa",
-    logo: "/partners/visa.png",
-  },
-  {
-    name: "mertamask",
-    logo: "/partners/new/metamask.png",
+    name: "ICP",
+    logo: "/partners/icpPartner.png",
   },
 ];
 
 const Partners = () => {
   return (
-    <div className="grid  max-w-[1240px] gap-3  grid-cols-3 md:grid-cols-4 xl:grid-cols-5 px-6 2xl:px-2   mx-auto ">
+    <div className="grid  max-w-[1240px] gap-3  grid-cols-3 md:grid-cols-3 xl:grid-cols-3 px-6 2xl:px-2   mx-auto ">
       {partners.map((partner, index) => (
         <div
           key={index}
@@ -103,7 +111,7 @@ const Partners = () => {
           />
         </div>
       ))}
-      <div className="  flex justify-center items-center h-[120px]">
+      {/* <div className="  flex justify-center items-center h-[120px]">
         <Image
           src={"/partners/circle.svg"}
           alt={"metamask"}
@@ -112,7 +120,7 @@ const Partners = () => {
           objectFit="cover"
           height={130}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

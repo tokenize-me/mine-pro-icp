@@ -22,14 +22,14 @@ const rewardItems: RewardItemSelection[] = [
   },
   {
     image: "/reward-system/5.png",
-    percentage: 15,
+    percentage: 5,
     title: "goes to ongoing marketing.",
     description:
       "This is to ensure $MINE has steady buy pressure over any market conditions.",
   },
   {
     image: "/reward-system/5.png",
-    percentage: 16,
+    percentage: 5,
     title: "goes to the team.",
     description: "This is used for ongoing development.",
   },

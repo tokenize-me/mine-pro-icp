@@ -19,7 +19,7 @@ const roadmapItems: RoadmapItem[] = [
   {
     number: 1,
     items: [
-      "Team internally purchases two 1.5 megawatt containers. Once filled each earning 10%-20% ROI per month.",
+      "Team internally purchases five 1.5 megawatt containers. Once filled each earning 5-15% ROI per month.",
       "Brand and go to market strategy development.",
       "Visit Logic Mining headquarters in Alberta.",
       "Site, socials, and white paper launch.",
@@ -29,28 +29,29 @@ const roadmapItems: RoadmapItem[] = [
     number: 2,
     items: [
       "Social FI campaign launch.",
-      "Seed Round launch.",
       "Massive multi platform marketing campaign kickoff.",
-      "Private ICO sale start",
-      "Pre TGE Staking launch",
-      "TGE",
+      "KOL on location vlogs.",
+      "Development Completion.",
     ],
   },
   {
     number: 3,
     items: [
-      "Token Launch",
-      "Play To Earn Game development begins",
-      "Hosting Business Channel Opens",
-      "Containers & Operational Expansion",
+      "Partnership expansion.",
+      "SNS Overview Introduction.",
+      "Decentralized Sale.",
+      "Dao SPV established.",
     ],
   },
   {
     number: 4,
     items: [
-      "Play To Earn game launch",
-      "Second phase marketing push",
-      "Strategic Partnership Expansion",
+      "Dao Miner Purchase.",
+      "Second phase marketing push.",
+      "Token Launch.",
+      "Strategic Partnership Expansion.",
+      "Hosting arm expansionary campaign.",
+      "Infrastructure Expansion.",
     ],
   },
 ];

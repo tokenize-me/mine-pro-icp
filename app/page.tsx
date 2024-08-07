@@ -54,9 +54,7 @@ export default function Home() {
                     Tokenized Bitcoin Mining For The People
                   </h1>
                   <p className="sm:text-center lg:text-left mt-5 max-w-[560px] text-white/60 text-[16px] sm:text-[18px] 2xl:text-[20px]">
-                    MinePro is an innovative tokenized Bitcoin mining project
-                    which pays investors 10-20% monthly profit in Bitcoin just
-                    for staking our native token, $MINE.
+                  MinePro is an innovative tokenized Bitcoin mining protocol on the Internet Computer. It pays investors 5-15% monthly profit in Bitcoin just for staking our native token, $MINE.
                   </p>
                 </div>
               </div>
@@ -123,7 +121,7 @@ export default function Home() {
               <BenefitsCard
                 image={"/icons/btc.png"}
                 title="Highly profitable Bitcoin mining"
-                description="Access profits from a highly profitable Bitcoin mining operation through our partnership with Logic Mining, which has a tested profitability of 10-20% per month just by staking our token, $MINE."
+                description="Access profits from a highly profitable Bitcoin mining operation through our partnership with Logic Mining, which has a tested profitability of 5-15% per month just by staking our token, $MINE."
               />
             </MotionDiv>
             <MotionDiv
@@ -171,7 +169,7 @@ export default function Home() {
               <BenefitsCard
                 image={"/icons/btc.png"}
                 title="Highly profitable Bitcoin mining"
-                description="Access profits from a highly profitable Bitcoin mining operation through our partnership with Logic Mining, which has a tested profitability of 10-20% per month just by staking our token, $MINE."
+                description="Access profits from a highly profitable Bitcoin mining operation through our partnership with Logic Mining, which has a tested profitability of 5-15% per month just by staking our token, $MINE."
               />
             </div>
             <div>
@@ -299,13 +297,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="mt-6 max-w-[560px] text-white/60 text-[16px]">
-              MinePro will be the first tokenized BTC mining project which will
-              reward stakers every single month in BTC. The MINE token will
-              serve as the deflationary governance token over the entire
-              ecosystem. Holders will simply stake their MINE tokens into the
-              staking pool and earn rewards in BTC every single month. It's that
-              simple. The staking pool will payout based on time staked (longer
-              stake, larger payout.)
+            MinePro will be the first tokenized Bitcoin mining Dao on ICP which will reward stakers every single month in BTC. The MINE token will serve as the deflationary governance token over the entire ecosystem. Holders will simply stake their MINE tokens into the staking pool and earn rewards in BTC every single month. It's that simple. The staking pool will payout based on time staked (longer stake, larger payout.)
             </p>
           </MotionDiv>
           <MotionDiv
@@ -315,14 +307,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="mt-6 max-w-[560px] text-white/60 text-[16px]">
-              All Contributors and airdrop recipients will have the
-              opportunity to stake their tokens before TGE. If they choose to
-              stake prior to liquidity creation there will be HUGE bonus
-              multipliers on earnings! Remember that as stakers you'll always
-              have the opportunity to unstake and move throughout the ecosystem.
-              We're for the people, and support any decision as an investor you
-              have, but we encourage staking because this is the best way to
-              maximize earning in the ecosystem.
+            All Dao contributors will have the opportunity to unstake and move throughout the ecosystem. We're for the people, and support any decision as an investor you have, but we encourage staking because this is the best way to maximize earning in the ecosystem.
             </p>
           </MotionDiv>
         </div>
@@ -366,10 +351,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <p className="mt-3 max-w-[870px] text-center text-white/60 text-[17px]">
-              Currently each container loaded with Bitmain Antminer S21's are
-              yielding an incredible 10-20% ROI every single month. The reason
-              for this is our incredible rate of 0.02 cent per kWh, which is
-              under contract for 5 years!
+            Currently each container loaded with Bitmain Antminer S21's are yielding an incredible 5-15% ROI every single month. The reason for this is our incredible rate of 0.02 cent per kWh, which is under contract for 5 years. 
             </p>
           </MotionDiv>
 
@@ -436,19 +418,19 @@ export default function Home() {
 
         <div className="mt-12 sm:mt-[72px] mb-[106px] flex flex-col items-center gap-8 w-full">
           <FAQCard
-            title="What is MinePro?"
+            title="What Is MinePro?"
             description="MinePro is a next level, tokenized, Bitcoin mining ecosystem which grants token holders access to passive profits from one of the lowest power cost Bitcoin mining operations in existence, a mining-revenue powered play-to-earn game, and more through our deflationary native token, $MINE."
           />
           <FAQCard
-            title="Where can I buy $MINE"
+            title="Where Can I Buy $MINE?"
             description="You're early! If you're reading this, you're able to try to gain early exposure to $MINE in our upcoming limited SNS Dao Sale, make sure to stay updated with us on Twitter and Discord for more information."
           />
           <FAQCard
-            title="What is the profit potential?"
+            title="What Is The Profit Potential?"
             description="MinePro SNS Dao Sale participants gain a guaranteed 2x profit on token launch. Once we have purchased, shipped, and started running the ASICs, stakers will gain a 10-20% expected non-compounded profit in pure BTC rewards. Compounded, that's around a 15,000% return in 3 years! Passively!"
           />
           <FAQCard
-            title="Is this for real?"
+            title="Transparency"
             description="Although the team has a proven track record of success, their most important core value is TRANSPARENCY. You can view our Director of Operations, Dylan, filming his trip out to Alberta where he checked out the hundreds of mining machines (ASICs) in action mining Bitcoin."
           />
         </div>
