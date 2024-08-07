@@ -56,6 +56,16 @@ export default function Home() {
                   <p className="sm:text-center lg:text-left mt-5 max-w-[560px] text-white/60 text-[16px] sm:text-[18px] 2xl:text-[20px]">
                   MinePro is an innovative tokenized Bitcoin mining protocol on the Internet Computer. It pays investors 5-15% monthly profit in Bitcoin just for staking our native token, $MINE.
                   </p>
+                  <div className="mt-10 flex lg:justify-start sm:justify-center">
+                    <Image
+                      src="/partners/icpPartner.png"
+                      alt="Benefits background image"
+                      width={450}
+                      height={350}
+                      className="lg:ml-0 sm:mx-auto"
+                    />
+                  </div>
+                  
                 </div>
               </div>
             </div>
