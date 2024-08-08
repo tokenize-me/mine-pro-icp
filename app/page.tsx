@@ -413,7 +413,7 @@ export default function Home() {
           />
           <FAQCard
             title="What Is The Profit Potential?"
-            description="MinePro SNS Dao Sale participants gain a guaranteed 2x profit on token launch. Once we have purchased, shipped, and started running the ASICs, stakers will gain a 5-15% expected non-compounded profit in pure BTC rewards."
+            description="Once we have purchased, shipped, and started running the ASICs, stakers will gain a potential 5-15%  non-compounded profit in pure BTC rewards."
           />
           <FAQCard
             title="Transparency"
