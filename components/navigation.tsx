@@ -1,10 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-// import { ConnectWallet } from "./connect-wallet";
 import config from "@/config";
-import Link from "next/link";
 
 const navlink = [
   {

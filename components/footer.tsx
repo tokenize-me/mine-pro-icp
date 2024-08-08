@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import MineProTag from "@/components/minepro-tag";
 import BenefitsCard from "@/components/benefits-card";
 import FAQCard from "@/components/faq-card";
@@ -6,7 +5,6 @@ import {
   fadeInVariants,
 } from "../types";
 import { MotionDiv } from "@/components/motion-div";
-import { ScrollToTop } from "@/components/scroll-to-top";
 import { RewardSystemCard } from "@/components/reward-system-card";
 import { HowToBuyItems } from "@/components/how-to-buy-items";
 import Roadmap from "@/components/roadmap";

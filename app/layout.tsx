@@ -5,7 +5,6 @@ import { Providers } from "./provider";
 import { Toaster } from "sonner";
 import Nav from "@/components/navigation";
 import Footer from "@/components/footer";
-import Image from "next/image";
 import config from "@/config";
 import { GoogleTagManager } from "@next/third-parties/google";
 
