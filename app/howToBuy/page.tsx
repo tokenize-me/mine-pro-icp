@@ -49,22 +49,18 @@ const Page = () => {
             You can purchase ICP on any major exchange, just be sure to send to your wallet on the ICP network.
           </p>
           <div className="w-full mt-12 md:mt-16">
-            <Image
-              src="/how-to-buy/image6.png"
-              alt="Connect Wallet"
-              className=" w-full h-full shadow-md rounded-xl image-shadow"
-              width={1920}
-              height={1080}
-            />
+          <img
+            src="/how-to-buy/image6.png"
+            alt="Connect Wallet"
+            className="w-full h-full shadow-md rounded-xl image-shadow"
+          />
           </div>
           <div className="w-full mt-10 md:mt-16">
-            <Image
-              src="/how-to-buy/image3.png"
-              alt="Connect Wallet"
-              className=" w-full h-full shadow-md rounded-xl image-shadow"
-              width={1920}
-              height={1080}
-            />
+          <img
+            src="/how-to-buy/image3.png"
+            alt="Connect Wallet"
+            className="w-full h-full shadow-md rounded-xl image-shadow"
+          />
           </div>
         </div>
         {/* step 02 */}
@@ -88,12 +84,10 @@ const Page = () => {
             Create an Internet Identity or sign in with an existing one.
           </p>
           <div className="w-full mt-12 md:mt-16">
-            <Image
+          <img
               src="/how-to-buy/image1.png"
               alt="Connect Wallet"
-              className=" w-full h-full shadow-md rounded-xl image-shadow"
-              width={1920}
-              height={1080}
+              className="w-full h-full shadow-md rounded-xl image-shadow"
             />
           </div>
         </div>

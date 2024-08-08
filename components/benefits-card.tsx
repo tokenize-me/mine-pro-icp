@@ -18,14 +18,14 @@ const BenefitsCard: React.FC<Props> = ({ image, title, description }) => {
           <div className="benefitOrangeCircle">
             <div className="flex itec justify-center">
               {title === "Highly profitable Bitcoin mining" ? (
-                <Image
+                <img
                   src={image}
                   alt={`benefit icon`}
                   width={22}
                   height={22}
                 />
               ) : (
-                <Image
+                <img
                   src={image}
                   alt={`benefit icon`}
                   width={26}

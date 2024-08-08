@@ -86,12 +86,10 @@ const Partners = () => {
           key={index}
           className="  flex justify-center items-center h-[120px]"
         >
-          <Image
+          <img
             src={partner.logo}
             alt={partner.name}
-            width={180}
-            objectFit="cover"
-            height={130}
+            className="w-fill h-fill object-cover"
           />
         </div>
       ))}
@@ -101,26 +99,14 @@ const Partners = () => {
           key={index}
           className="  flex justify-center items-center h-[120px]"
         >
-          <Image
+          
+          <img
             src={partner.logo}
             alt={partner.name}
-            width={180}
-            className=" brightness-0 invert "
-            objectFit="cover"
-            height={130}
+            className="w-fill h-fill object-cover brightness-0 invert"
           />
         </div>
       ))}
-      {/* <div className="  flex justify-center items-center h-[120px]">
-        <Image
-          src={"/partners/circle.svg"}
-          alt={"metamask"}
-          width={180}
-          className=" brightness-0 invert "
-          objectFit="cover"
-          height={130}
-        />
-      </div> */}
     </div>
   );
 };

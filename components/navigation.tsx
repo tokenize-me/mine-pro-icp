@@ -44,7 +44,7 @@ const Navigation = () => {
         rel="noreferrer"
         className="justify-self-start flex gap-2 items-center"
       >
-        <Image src="/logo-white.svg" alt="logo" width={36} height={36} />
+        <img src="/logo-white.svg" alt="logo" width={36} height={36} />
         <p className=" text-[24px] font-medium">MinePro</p>
       </a>
 
@@ -52,14 +52,14 @@ const Navigation = () => {
       <button className="block lg:hidden" onClick={() => setNavbar(!navbar)}>
         <div className="orangeButton hamburgerBtn">
           {navbar ? (
-            <Image
+            <img
               src="/icons/close-menu.svg"
               width={24}
               height={24}
               alt="logo"
             />
           ) : (
-            <Image
+            <img
               src="/icons/hamburger-menu.svg"
               width={24}
               height={24}

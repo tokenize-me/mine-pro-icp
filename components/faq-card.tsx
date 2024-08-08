@@ -32,7 +32,7 @@ const FAQCard: React.FC<Props> = ({ title, description }) => {
               isExpanded && "rotate-180"
             }`}
           >
-            <Image
+            <img
               src="/icons/chevron.svg"
               alt={`benefit icon`}
               width={32}

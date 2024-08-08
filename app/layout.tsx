@@ -30,14 +30,13 @@ export default function RootLayout({
               <div
                 className={`-z-10 fixed h-screen w-screen top-0 left-0 opacity-${config.backgroundImageOpacity}`}
               >
-                <Image
-                  src={config.backgroundImagePath}
-                  alt="background image"
-                  fill
-                  objectFit="cover"
-                  quality={100}
-                  priority
-                />
+                <div className="relative w-full h-full">
+                  <img
+                    src={config.backgroundImagePath}
+                    alt="background image"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
               </div>
             )}
           <div className="heroSectionBG"></div> {/* top radial gradient */}

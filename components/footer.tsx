@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <div className="">
           {/* logo */}
           <div className="flex items-center gap-3">
-            <Image src="/logo-white.svg" alt="logo" width={36.24} height={38} />
+            <img src="/logo-white.svg" alt="logo" width={36.24} height={38} />
             <p className="font-bold text-[26px] leading-8">MinePro</p>
           </div>
           {/* about */}
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                 rel="noreferrer"
                 className="glassButton" /* text-[14px] font-semibold leading-6  */
               >
-                <Image
+                <img
                   src="/icons/socials/discord.svg"
                   alt="discord icon"
                   width={32}
@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
                 rel="noreferrer"
                 className="glassButton"
               >
-                <Image
+                <img
                   src="/icons/socials/gitbook.svg"
                   alt="gitbook icon"
                   width={32}
@@ -143,7 +143,7 @@ const Footer: React.FC = () => {
                 rel="noreferrer"
                 className="glassButton"
               >
-                <Image
+                <img
                   src="/icons/socials/twitter.svg"
                   alt="x icon"
                   width={24}
@@ -161,7 +161,7 @@ const Footer: React.FC = () => {
                 rel="noreferrer"
                 className="glassButton"
               >
-                <Image
+                <img
                   src="/icons/socials/telegram.svg"
                   alt="x icon"
                   width={24}

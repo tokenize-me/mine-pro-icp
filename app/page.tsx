@@ -57,7 +57,7 @@ export default function Home() {
                   MinePro is an innovative tokenized Bitcoin mining protocol on the Internet Computer. It pays investors 5-15% monthly profit in Bitcoin just for staking our native token, $MINE.
                   </p>
                   <div className="mt-10 flex lg:justify-start sm:justify-center">
-                    <Image
+                    <img
                       src="/partners/icpPartner.png"
                       alt="Benefits background image"
                       width={450}
@@ -99,17 +99,6 @@ export default function Home() {
 
         {/* benefits grid */}
         <div className="mt-24 grid gap-8 lg:grid-cols-2 px-8 lg:px-16">
-          {/* Column 1 */}
-          {/* <div className="hidden lg:block">
-            <div className="w-full md:w-2/3 h-[95%] min-h-[350px] md:min-h-[650px] relative">
-              <Image
-                src="/benefits.png"
-                alt="Benefits image"
-                objectFit="contain"
-                fill
-              />
-            </div>
-          </div> */}
 
           <div className="hidden lg:block">
             {/* image */}
@@ -206,7 +195,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-8 sm:mt-12 w-full">
-          <Image
+          <img
             src="/backgrounds/benefitsBackground.png"
             alt="Benefits background image"
             width={833}
@@ -255,11 +244,10 @@ export default function Home() {
 
         {/* right col - image */}
         <div className="w-full md:w-1/2 2xl:w-2/3 h-[95%]  min-h-[350px] md:min-h-[800px] relative">
-          <Image
+        <img
             src="/ASIC_Miningtool.png"
             alt="Mining Perfected"
-            objectFit="contain"
-            fill
+            className="object-contain w-full h-full"
           />
         </div>
       </section>
@@ -326,16 +314,6 @@ export default function Home() {
         <div className="w-full max-w-[500px] h-[95%] sm:h-[65%] min-h-[200px] md:min-h-[600px] relative flex items-center">
           <VideoCoin />
         </div>
-        {/* <div className="w-full  flex items-center md:w-1/4 h-[95%] sm:h-[65%] min-h-[200px] md:min-h-[600px] relative">
-          <Image
-            src="/COIN.gif"
-            alt="how it works image"
-            objectFit="cover"
-            width={1500}
-            height={1500}
-            className=" w-full object-cover object-center h-full"
-          />
-        </div> */}
       </section>
       {/* reward system section */}
       <section className="my-[72px] relative">

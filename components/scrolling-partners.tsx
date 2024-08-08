@@ -51,7 +51,7 @@ const ScrollingPartners: React.FC = () => {
 
             {/* content - logo */}
             <div className="">
-              <Image
+              <img
                 src={partner.logo}
                 alt={partner.name}
                 width={200}

@@ -54,10 +54,10 @@ interface Config {
 // set values for config here
 const config: Config = {
   siteTitle: "MinePro Public Sale",
-  siteDescription: "Join the MinePro Public Sale!",
+  siteDescription: "Bitcoin Mining For The People",
   companyName: "MinePro",
   projectName: "MinePro Public Sale",
-  primaryDescription: "Join the MinePro Public Sale!",
+  primaryDescription: "Bitcoin Mining For The People",
   // secondaryDescription: "Default Secondary Description",
   displayOptions: {
     showLogoTopLeft: true,
