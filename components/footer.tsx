@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
             Legal
           </a>
           <a
-            href="https://minepro-1.gitbook.io/minepro-new-docs"
+            href="https://minepro-1.gitbook.io/minepro"
             target="_blank"
             rel="noreferrer"
             className="text-[14px] font-semibold leading-6 text-white/60 hover:text-white transition-all duration-200"
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col gap-4">
           <p className="text-[20px] font-bold leading-8">Company</p>
           <a
-            href="https://minepro-1.gitbook.io/minepro-new-docs"
+            href="https://minepro-1.gitbook.io/minepro"
             target="_blank"
             rel="noreferrer"
             className="text-[14px] font-semibold leading-6 text-white/60 hover:text-white transition-all duration-200"
@@ -119,7 +119,7 @@ const Footer: React.FC = () => {
             {/* gitbook */}
             <div className="glassButtonContainer">
               <a
-                href="https://minepro-1.gitbook.io/minepro-new-docs"
+                href="https://minepro-1.gitbook.io/minepro"
                 target="_blank"
                 rel="noreferrer"
                 className="glassButton"

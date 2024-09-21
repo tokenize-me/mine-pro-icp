@@ -53,7 +53,7 @@ interface Config {
 
 // set values for config here
 const config: Config = {
-  siteTitle: "MinePro Public Sale",
+  siteTitle: "MinePro",
   siteDescription: "Bitcoin Mining For The People",
   companyName: "MinePro",
   projectName: "MinePro Public Sale",

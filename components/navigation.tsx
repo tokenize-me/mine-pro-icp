@@ -101,7 +101,7 @@ const Navigation = () => {
             FAQ
           </a>
           <a
-            href="https://minepro-1.gitbook.io/minepro-new-docs"
+            href="https://minepro-1.gitbook.io/minepro"
             target="_blank"
             rel="noreferrer"
             className="text-white/40 hover:text-white"
@@ -143,7 +143,7 @@ const Navigation = () => {
           </button>
         ))}
         <a
-          href="https://minepro-1.gitbook.io/minepro-new-docs"
+          href="https://minepro-1.gitbook.io/minepro"
           target="_blank"
           rel="noreferrer"
           className="text-white/40 capitalize hover:text-white text-xs 2xl:text-base text-nowrap"
