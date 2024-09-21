@@ -31,8 +31,8 @@ const config = createConfig(
     walletConnectProjectId: process.env
       .NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID as string,
     // App info
-    appName: "MinePro Public Sale",
-    appDescription: "MinePro Public Sale",
+    appName: "MinePro",
+    appDescription: "MinePro",
     appIcon: "",
     appUrl: "https://mineprobusiness.net",
   })

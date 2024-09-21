@@ -56,7 +56,7 @@ const config: Config = {
   siteTitle: "MinePro",
   siteDescription: "Bitcoin Mining For The People",
   companyName: "MinePro",
-  projectName: "MinePro Public Sale",
+  projectName: "MinePro",
   primaryDescription: "Bitcoin Mining For The People",
   // secondaryDescription: "Default Secondary Description",
   displayOptions: {
